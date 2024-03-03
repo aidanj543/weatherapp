@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <title>Weather Webpage</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  fontFamily: {
+                    Bebas: ["Bebas Neue", "sans-serif"],
+                    Montserrat: ["Montserrat", "sans-serif"]
+                  }
+                }
+              }
+            }
+          </script>
+
+
+    </head>
+    <body>
+        <script src = "weatherapp.js"></script>
+    <body class = "h-screen bg-gradient-to-r from-red-300 via-orange-300 to-yellow-300 p-10">
+        <div id ="Website Name" class =  ' flex items-center justify-center'>
+            <h1 class="text-6xl font-Bebas">Weather Tracker</h1>
+        </div>
+        <div id="Search Bar" class = "grid grid-cols-1 place-items-center place-content-center w-full">
+            <div class = "w-3/4 flex justify-center items-center bg-white rounded-md h-12 mt-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" class="w-6 mx-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                  </svg>
+                  <input class = " outline-none rounded focus:ring-black w-full h-full " placeholder = "Siloam Springs, Arkansas 72761"/>
+                  <button class = "px-4 bg-gradient-to-r from-lime-500 to-green-500 rounded-xl mx-4">Search</button>
+            </div>
+        </div>
+
+        <div id="Temperature" class = "flex items-center justify-center p-10">
+            <h2 class = "text-8xl font-Bebas p-5 drop-shadow-xl" id = "Temperature">77°F</h2>
+        </div>
+        <div id = "City" class = "flex items-center justify-center p-10">
+            <h3 class = "font-Bebas text-2xl">Siloam Springs</h3>
+        </div>
+
+        <div id="clock" class = " p-10 font-Bebas text-4xl flex items-center justify-center"></div>
+
+        <div id = "Days" class = " rounded-xl p-15 flex grid grid-cols-7 place-items-center place-content-center bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200">
+            <h4 class = "font-Bebas text-2xl">Monday</h4>
+            <h5 class = "font-Bebas text-2xl">Tuesday</h5>
+            <h6 class = "font-Bebas text-2xl">Wednesday</h6>
+            <h7 class = "font-Bebas text-2xl">Thursday</h7>
+            <h8 class = "font-Bebas text-2xl">Friday</h8>
+            <h9 class = "font-Bebas text-2xl">Saturday</h9>
+            <h10 class = "font-Bebas text-2xl">Sunday</h10>
+            <h11 class = "font-Bebas text-2xl">59°F</h11>
+            <h12 class = "font-Bebas text-2xl">45°F</h12>
+            <h13 class = "font-Bebas text-2xl">70°F</h13>
+            <h14 class = "font-Bebas text-2xl">65°F</h14>
+            <h15 class = "font-Bebas text-2xl">45°F</h15>
+            <h16 class = "font-Bebas text-2xl">57°F</h16>
+            <h17 class = "font-Bebas text-2xl">63°F</h17>
+        </div>
+
+    </body>
+    <script src = "weatherapp.js"></script>
+</html>
