@@ -30,19 +30,16 @@
         <div id ="Website Name" class =  ' flex items-center justify-center'>
             <h1 class="text-6xl font-Bebas">Weather Tracker</h1>
         </div>
-        <div id="Search Bar" class = "grid grid-cols-1 place-items-center place-content-center w-full">
+        <div id="Search City" class = "grid grid-cols-1 place-items-center place-content-center w-full">
             <div class = "w-3/4 flex justify-center items-center bg-white rounded-md h-12 mt-12">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" class="w-6 mx-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                  </svg>
-                  <input class = " outline-none rounded focus:ring-black w-full h-full " placeholder = "Siloam Springs, Arkansas 72761"/>
+                  <label for = "City" class = "flex font-Bebas">Enter City:</label>
+                  <input class = " font-Bebas text-xl outline-none rounded focus:ring-black w-full h-full " type='text' id="City" placeholder = "City Name"/>
                   <button class = "px-4 bg-gradient-to-r from-lime-500 to-green-500 rounded-xl mx-4">Search</button>
             </div>
         </div>
 
-        <div id="Temperature" class = "flex items-center justify-center p-10">
-            <h2 class = "text-8xl font-Bebas p-5 drop-shadow-xl" id = "Temperature">77°F</h2>
-        </div>
+        
+        
         <div id = "City" class = "flex items-center justify-center p-10">
             <h3 class = "font-Bebas text-2xl">Siloam Springs</h3>
         </div>

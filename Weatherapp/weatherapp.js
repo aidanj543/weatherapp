@@ -21,3 +21,5 @@ function updateClock(){
 
 //this will call the updateClock function for the first time
 updateClock();
+
+
