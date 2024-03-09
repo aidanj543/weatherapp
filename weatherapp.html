@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <title>Weather Webpage</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  fontFamily: {
+                    Bebas: ["Bebas Neue", "sans-serif"],
+                    Montserrat: ["Montserrat", "sans-serif"]
+                  }
+                }
+              }
+            }
+          </script>
+
+
+    </head>
+    <body class = "h-screen bg-gradient-to-r from-yellow-300 to-orange-300 p-10">
+        <div id ="Website Name" class =  ' flex items-center justify-center'>
+            <h1 class="text-6xl font-Bebas">Weather Tracker</h1>
+        </div>
+        
+        <div id="weather-form" class="flex items-center justify-center ">
+          <form id="weather-form" class="flex bg-white p-2 rounded-md w-3/4">
+            <label for="city" class="font-Bebas">Enter City:</label>
+            <input type="text" id="city" name="city" class="w-full outline-none bg-white focus:bg-white" required>
+            <button type="Submit" class="bg-green-300 p-2 rounded-md font-Bebas">Search</button>
+          </form>
+        </div>
+
+        <div id="Temperature" class = "font-Bebas text-3xl"></div>
+
+        <div id="clock" class = " p-10 font-Bebas text-4xl flex items-center justify-center"></div>
+        <div id="weather-info" class="place-content-center place-items-center font-Bebas text-3xl justify-center w-full grid grid-cols-1">
+          <h2>Current Weather</h2>
+          <div id = 'current-weather'></div>
+          <h2>5-Day Forecast</h2>
+          <div id="forecast"></div>
+        </div>
+
+
+        
+
+    </body>
+    <script src = "weatherapp.js"></script>
+</html>
