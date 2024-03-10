@@ -25,7 +25,7 @@ updateClock();
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = 'bce24c864075f7f5d1cb599c4383865d';
+    const apiKey = '908bcad86f66a18da9a4a5447f583f87';
     const apiUrlCurrent = 'https://api.openweathermap.org/data/2.5/weather';
     const apiUrlForecast = 'https://api.openweathermap.org/data/2.5/forecast';
 
